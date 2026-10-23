@@ -23,6 +23,8 @@ to report disruption, to ask for an incident to be rescinded or a sanction reduc
 question about these procedures. Administrators use it to notify the moderator team of reports and
 actions taken.
 
+The moderator team is responsible for:
+
 * Define these proposed procedures, with community input, for approval by IESG
 * Act as administrators of plenary lists
 	- ietf@ietf.org
@@ -34,7 +36,8 @@ actions taken.
 	- In cases of disruption across multiple lists
 * Provide training and guidance to administrators
 * Maintain the incident register
-* Respond to requests and perform actions in a timely manner (defined as "SHOULD be within 48 hours, MUST be within one week").
+* Respond to requests and perform actions in a timely manner (SHOULD be within 48 hours; MUST be within one week), so long
+as the requests themselves are not determined to be disruptive or abuseive.
 * Revise these procedures based on experience, following the same community input and approval process.
 * Extend sanctions to multiple lists where appropriate
 
@@ -65,19 +68,17 @@ Disruption can take any of these forms.
 	- Inciting hate
 - Messages unrelated to the list's purpose
 - Behavior that hinders the work of the group
-- Sealioning: the disingenuous action by a commenter of making an ostensible effort to engage in
-  sincere and serious civil debate, usually by asking persistent questions of the other commenter.
-  The questions appear as an effort to learn, but degrade the progress of technical debate and the
-  goodwill of the list participants. See the descriptions from
-  [Merriam-Webster](https://www.merriam-webster.com/wordplay/sealioning-internet-trolling) and
-  [Wikipedia](https://en.wikipedia.org/wiki/Sealioning).
 - Astroturfing
 - Messages containing confidential information
 - Repeated inclusion of derivative rights notices
 	- As per the [IESG statement](https://datatracker.ietf.org/doc/statement-iesg-statement-on-clarifying-derivative-works-rights/)
 - Messages containing slop
 
+Some of these cases are detailed below.
+
 ### Counting incidents
+
+Incidents are counted as follows:
 
 - A connected series of messages - one thread, or several messages over a short period making
   the same disruption - is **one** incident, not one per message.
@@ -85,10 +86,10 @@ Disruption can take any of these forms.
   by the administrator of one list counts when the administrator of another list acts later.
 - An **eligible incident** is one that has not been rescinded and whose conduct occurred within the
   past five years. Only eligible incidents are counted.
-- All forms of disruption share a single count. It does not matter whether the earlier incidents
-  were of the same kind as the one being handled now.
-- Every incident MUST be recorded in the incident register, and notified to the respondent and to
-  co-administrators.
+- The count includes every eligible incident, regardless of its form.
+
+Every incident MUST be recorded in the incident register and notified to the respondent and to
+co-administrators.
 
 ## Incident register
 
@@ -121,10 +122,10 @@ so every address on that account shares a single incident count.
 If the respondent does not already have a Datatracker account, the moderator team creates one,
 linked to the email address from which the disruption came.
 
-If disruption from another address is identified as coming from the same person, the moderator team
-identifies their existing account and records the incident against it. The other address is not
-added to the account. If the identification turns out to be wrong, the remedy is to rescind the
-incident.
+If credible evidence shows that disruption from another address or Datatracker account came from
+the same person, the moderator team records the incident against that person's existing account.
+The other address is not added to the account. A person does not avoid the incident count by using
+multiple addresses or accounts. If the identification turns out to be wrong, the remedy is to rescind the incident.
 
 ### Who sees what
 
@@ -133,6 +134,7 @@ incident.
 | The action-taker, at the point of recording an incident | the maximum sanction available for the respondent based on the sanction ladder |
 | The action-taker, the respondent, the moderator team, the IESG, and legal counsel | the full detail of that incident |
 | Any respondent | the history of incidents recorded against them, the maximum sanction available against them, and any current sanction in force |
+| Administrators of a forum, including replacement administrators | the incident history and sanctions recorded for that forum |
 | The moderator team, the IESG, and legal counsel | every incident, and every participant's incident count and history |
 
 Once a year the moderator team publishes a report giving the number of incidents recorded in that
@@ -153,6 +155,14 @@ part in the decision. They ask the moderator team or the IESG instead.
 
 The respondent may ask any of them to rescind an incident.
 
+It is appropriate to rescind an incident when it is found that the determination of disruption was
+made in error. If the incident did occur but the respondent is determined to be willing to improve
+their behavior, then reducing the sanction (see below) is a better choice.
+
+A finding may also be in error because the respondent's account was compromised and the messages
+were not theirs. A hold may still be appropriate until the account is secured, and repeated
+compromises are a reason to keep it.
+
 A rescinded incident is no longer eligible: it is removed from the count and from the calculation of
 sanctions available against this respondent. It remains visible in full (marked rescinded) to the
 action-taker, the respondent, the moderator team, the IESG, and legal counsel.
@@ -162,14 +172,6 @@ see if they should be reduced or removed.
 
 If a public statement was made about the incident, whoever rescinds it sends a correction to the
 same forums, saying that the finding has been withdrawn, unless the respondent asks that none be sent.
-
-It is appropriate to rescind an incident when it is found that the determination of disruption was made
-in error.  If the incident did occur but the respondent is determined to be willing to improve their
-behavior, then reducing the sanction (see below) is a better choice.
-
-A finding may also be in error because the respondent's account was compromised and the messages
-were not theirs. A hold may still be appropriate until the account is secured, and repeated
-compromises are a reason to keep it.
 
 ### Reducing a sanction
 
@@ -431,8 +433,9 @@ As per the advice in [Spam control](https://chairs.ietf.org/mailing-lists):
 ### Handling behavior that hinders the work of the group
 
 This is conduct that may be civil and on topic but obstructs progress: for example, repeatedly
-arguing against an approved charter, reopening a consensus call without new information, or making
-the same point in reply after reply so that other voices are drowned out.
+arguing against an approved charter, reopening a consensus call without new information, continuing
+to debate a point after the chairs have clearly closed that debate, or making the same point in reply
+after reply so that other voices are drowned out.
 
 Disagreement, however persistent, is not disruption. The test is whether the conduct adds to the
 discussion, not whether the administrator agrees with it. Asking the chairs to revisit a decision
